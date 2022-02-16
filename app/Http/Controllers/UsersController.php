@@ -13,4 +13,12 @@ class UsersController extends Controller
             'users' => User::latest()->paginate(10)->withQueryString()
         ]);
     }
+
+    public function show(User $user)
+    {
+        return view('users.show', [
+            'user' => $user
+        ]);
+    }
+
 }

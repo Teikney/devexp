@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SessionFactory extends Factory
@@ -14,7 +15,7 @@ class SessionFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'user_id' => User::factory(),
         ];
     }
 }

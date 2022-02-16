@@ -1,4 +1,4 @@
-<a {{ $attributes([ "class" => "flex py-3 px-4 hover:bg-blue-600 hover:text-blue-50 hover:font-extrabold rounded"]) }} >
+<a {{ $attributes([ "class" => "flex py-3 px-4 hover:bg-blue-600 hover:text-blue-50 rounded"]) }} >
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
 
         @if ($slot == "Página Inicial")
@@ -12,9 +12,11 @@
         @endif
 
     </svg>
-    <div class=" ml-4">
-        {{ $slot }}
-    </div>
+    {{-- <div class=" ml-4"> --}}
+        <span class="ml-4 hover:font-bold">
+            {{ $slot }}
+        </span>
+    {{-- </div> --}}
 </a>
 
 

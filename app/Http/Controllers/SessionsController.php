@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+
 use Illuminate\Validation\ValidationException;
 
 class SessionsController extends Controller
@@ -22,7 +26,8 @@ class SessionsController extends Controller
         //attempt to authenticate and log in the user
         //based on the provided credentials
         //authentication fails
-
+        //$attributes['password'] = bcrypt('password');
+        //ddd(Auth::check($attributes));
         if(!auth()->attempt($attributes, true)) {
             //auth failed
             ddd($attributes);

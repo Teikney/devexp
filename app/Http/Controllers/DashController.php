@@ -10,4 +10,6 @@ class DashController extends Controller
     {
         return view('dashboard.index');
     }
+
+
 }
