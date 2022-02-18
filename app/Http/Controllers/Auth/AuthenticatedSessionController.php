@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
+use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -32,6 +33,8 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        Auth::user()->active = true;
+
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
@@ -43,6 +46,11 @@ class AuthenticatedSessionController extends Controller
      */
     public function destroy(Request $request)
     {
+
+        //Auth::user()->active = false;
+        $u = User::find(Auth::user()->id);
+        $u->active=false;
+        $u->save();
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();

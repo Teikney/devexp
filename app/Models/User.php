@@ -20,6 +20,7 @@ class User extends Authenticatable
 
     protected $fillable = [
         'mecanografico',
+        'active',
         'name',
         'email',
         'password',
@@ -43,10 +44,5 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    public function session()
-    {
-        return $this->hasOne(Session::class);
-    }
 
 }

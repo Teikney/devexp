@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Session;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -19,6 +18,7 @@ class UserFactory extends Factory
         return [
             'mecanografico' => $this->faker->numberBetween(60000,999999),
             'name' => $this->faker->name(),
+            'active' => $this->faker->boolean(20),
             'email' => $this->faker->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => Hash::make('password'), // password

@@ -33,15 +33,21 @@
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
 
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
 
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
-            </div>
+            <x-password-input/>
+
+
+            <!-- Password -->
+
+            {{-- <div class="mt-4" x-data="{ show: true}"  @click.away="show = true">
+                <x-label for="password" :value="__('Password')" />
+                <x-input id="password"
+                        class="block mt-1 w-full"
+                        :type="{$show ? 'password' : 'text'}"
+                        name="password"
+                        autocomplete="new-password"
+                         />
+            </div> --}}
 
             <!-- Confirm Password -->
             <div class="mt-4">

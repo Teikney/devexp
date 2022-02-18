@@ -33,6 +33,7 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
+    
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'mecanografico' => ['required','digits_between:5,6'],
@@ -42,6 +43,7 @@ class RegisteredUserController extends Controller
 
         $user = User::create([
             'name' => $request->name,
+            'active' => true,
             'mecanografico' => $request->mecanografico,
             'email' => $request->email,
             'password' => Hash::make($request->password),

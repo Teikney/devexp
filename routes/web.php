@@ -3,7 +3,6 @@
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\DashController;
 use App\Http\Controllers\DeviceController;
-use App\Http\Controllers\SessionsController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,7 +27,7 @@ Route::get('/login',    [ AuthenticatedSessionController::class, 'create'])->mid
 Route::post('/login',   [ AuthenticatedSessionController::class, 'store'])->middleware('guest');
 
 Route::get('/',         [ DashController::class , 'index'])->middleware('auth');
-Route::post('logout',   [ SessionsController::class , 'destroy'])->middleware('auth');
+Route::post('logout',   [ AuthenticatedSessionController::class , 'destroy'])->middleware('auth');
 Route::get('/users',    [ UsersController::class , 'index'])->middleware('auth');
 Route::get('/users/{user:mecanografico}',    [ UsersController::class , 'show'])->middleware('auth');
 
