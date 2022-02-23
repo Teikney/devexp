@@ -1,8 +1,18 @@
 id,name,initials
-1,Gabinete Cidadão,GC
-2,Unidade de Apoio à Gestão,UAG
-3,Unidade de Cuidados na Comunidade,UCC
-4,Unidade de Cuidados de Saúde Personalizados,UCSP
-5,Unidade de Recursos Assistenciais Partilhados,URAP
-6,Unidade de Saúde Familiar,USF
-7,Unidade de Saúde Pública,USP
+1,Conselho Diretivo,CD
+2,Departamento de Saúde Pública e Planeamento,DSPP
+3,Departamento de Contratualização,DC
+4,Departamento de Gestão e Administração Geral,DGAG
+5,Divisão de Intervenção nos Comportamentos Aditivos e nas Dependências,DICAD
+6,Gabinete de Instalações e Equipamentos,GIE
+7,Gabinete Jurídico e do Cidadão,GJC
+8,Unidade de Gestão de Recursos Humanos,UGRH
+9,Unidade de Compras e Logística,UCL
+10,Gabinete Cidadão,GC
+11,Unidade Apoio à Gestão,UAG
+12,Unidade de Cuidados na Comunidade,UCC
+13,Unidade de Cuidados de Saúde Personalizados,UCSP
+14,Unidade de Recursos Assistenciais Partilhados,URAP
+15,Unidade de Saúde Familiar,USF
+16,Unidade de Saúde Pública,USP
+17,Geral,GRL

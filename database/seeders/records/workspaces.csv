@@ -1,0 +1,150 @@
+id,institution_id,name,unit_id,code
+1,1,Geral,1,ARS-CD
+2,1,Fiscal Único,1,ARS-FISCAL
+3,1,Conselho Consultivo,1,ARS-CC
+4,1,Equipa Regional de Apoio à Reforma CSP,1,ARS-ERARCSP
+5,1,Equipa Coordenadores Regional de CCI,1,ARS-ECRCCI
+6,1,Comissão de Farmáola e Terapêutica,1,ARS-CFT
+7,1,Serviço de Arquivo e Expediente,1,ARS-SAE
+8,1,Unidade de Terapia Familiar,1,ARS-UTF
+9,1,Gabinete de Auditoria e Controlo Interno,1,ARS-GACI
+10,1,Assessoria Técnica e Financeira,1,ARS-ATF
+11,1,Assessoria de Imprensa e Comunicação,1,ARS-AIC
+12,1,Comissão de Ética para a Saúde,1,ARS-CES
+13,1,Núcleo de Rastreios,1,ARS-NR
+14,1,Núcleo de Formação Profissional,1,ARS-NFP
+15,1,Geral,2,ARS-DSPP
+16,1,Centro de Aconselhamento e Deteção VIH/SIDA,2,ARS-DSPP-CAD
+17,1,Laboratório Regional de Saude,2,ARS-DSPP-LRS
+18,1,Núcleo de Estudos e Planeamento,2,ARS-DSPP-NEP
+19,1,Núcleo de Monitorização e Análise de Medicamentos e MCDT,2,ARS-DSPP-NMAMMCDT
+20,1,Núcleo de Vigilância Epidemiológica,2,ARS-DSPP-NVE
+21,1,Coordenação Radiologia,2,ARS-DSPP-CR
+22,1,Gestão de Programas e Promoção da Saúde,2,ARS-DSPP-GPPS
+23,1,Contratualização,3,ARS-C
+24,1,Geral,4,ARS-DGAG
+25,1,Serviço de Contabilidade,4,ARS-DGAG-SC
+26,1,Tesouraria,4,ARS-DGAG-T
+27,1,Serviço de Controlo Orçamental,4,ARS-DGAG-SCO
+28,1,Serviço de Prestações Indiretas,4,ARS-DGAG-SPI
+29,1,Núcleo de Sistemas de Informação e Comunicação,4,ARS-DGAG-NSIC
+30,1,Geral,5,ARS-DICAD
+31,1,Unidade de Alcoologia,5,ARS-DICAD-UA
+32,1,Unidade de Desabituação,5,ARS-DICAD-UD
+33,1,Comunidades,5,ARS-DICAD-C
+34,1,Centro de Respostas Integradas,5,ARS-DICAD-CRI
+35,1,Geral,6,ARS-GIE
+36,1,Gabinete de Serviço de Património,6,ARS-GIE-GSP
+37,1,Geral,7,ARS-GJC
+38,1,Núcleo do Cidadão e Documentação,7,ARS-GJC-NCD
+39,1,Geral,8,ARS-UGRH
+40,1,Pessoal e Vencimentos,8,ARS-UGRH-PV
+41,1,Serviço de Saúde Ocupacional,8,ARS-UGRH-SSO
+42,1,Geral,9,ARS-UCL
+43,1,Compras,9,ARS-UCL-B
+44,1,Armazém,9,ARS-UCL-A
+45,1,Serviço de Viaturas,9,ARS-UCL-SV
+46,1,Serviços Farmacêuticos,9,ARS-UCL-SF
+47,1,Serviço de Gestão de Transporte e Doentes,9,ARS-UCL-SGTD
+48,1,Geral,30,ARS-GRL
+49,2,gabinete cidadão,10,CS-ABF-GC
+50,2,central,11,CS-ABF-UAG
+51,2,al-buhera,12,CS-ABF-UCC
+52,2,albufeira,13,CS-ABF-UCSP
+53,2,central,14,CS-ABF-URAP
+54,2,albufeira,15,CS-ABF-USF
+55,2,central,16,CS-ABF-USP
+56,3,sotavento,11,CS-ACT-UAG
+57,3,santo antónio arenilha,12,CS-ACT-UCC
+58,3,Aleo,13,CS-ACT-UCSP
+59,3,sotavento,14,CS-ACT-URAP
+60,3,sotavento,16,CS-ACT-USP
+61,4,barlavento,11,CS-AJZ-UAG
+62,4,barlavento,12,CS-AJZ-UCC
+63,4,aljezur,13,CS-AJZ-UCSP
+64,4,aljezur,14,CS-AJZ-URAP
+65,4,barlavento,16,CS-AJZ-USP
+66,5,sotavento,11,CS-CTM-UAG
+67,5,sotavento,14,CS-CTM-URAP
+68,5,baesuris,15,CS-CTM-USF
+69,5,sotavento,16,CS-CTM-USP
+70,6,gabinete cidadão,10,CS-FAR-GC
+71,6,central,11,CS-FAR-UAG
+72,6,faro,12,CS-FAR-UCC
+73,6,faro,13,CS-FAR-UCSP
+74,6,central,14,CS-FAR-URAP
+75,6,al-gharb,15,CS-FAR-USF
+76,6,farol,15,CS-FAR-USF
+77,6,ossónoba,15,CS-FAR-USF
+78,6,ria formosa,15,CS-FAR-USF
+79,6,central,16,CS-FAR-USP
+80,7,barlavento,11,CS-LGA-UAG
+81,7,lagoa,12,CS-LGA-UCC
+82,7,lagoa,13,CS-LGA-UCSP
+83,7,barlavento,14,CS-LGA-URAP
+84,7,barlavento,16,CS-LGA-USP
+85,8,barlavento,11,CS-LGS-UAG
+86,8,infante,12,CS-LGS-UCC
+87,8,lagos,13,CS-LGS-UCSP
+88,8,barlavento,14,CS-LGS-URAP
+89,8,amendoeira,15,CS-LGS-USF
+90,8,descobrimentos,15,CS-LGS-USF
+91,8,barlavento,16,CS-LGS-USP
+92,9,gabinete cidadão,10,CS-LLE-GC
+93,9,central,11,CS-LLE-UAG
+94,9,gentes de loulé,12,CS-LLE-UCC
+95,9,almancil/boliqueime,13,CS-LLE-UCSP
+96,9,loulé,13,CS-LLE-UCSP
+97,9,quarteira,13,CS-LLE-UCSP
+98,9,central,14,CS-LLE-URAP
+99,9,lauroé,15,CS-LLE-USF
+100,9,serra e mar,15,CS-LLE-USF
+101,9,central,16,CS-LLE-USP
+102,10,barlavento,11,CS-MCQ-UAG
+103,10,monchique,12,CS-MCQ-UCC
+104,10,monchique,13,CS-MCQ-UCSP
+105,10,barlavento,14,CS-MCQ-URAP
+106,10,barlavento,16,CS-MCQ-USP
+107,11,gabinete cidadão,10,CS-OLH-GC
+108,11,central,11,CS-OLH-UAG
+109,11,olhar +,12,CS-OLH-UCC
+110,11,olhão,13,CS-OLH-UCSP
+111,11,central,14,CS-OLH-URAP
+112,11,âncora,15,CS-OLH-USF
+113,11,mirante,15,CS-OLH-USF
+114,11,central,16,CS-OLH-USP
+115,12,barlavento,11,CS-PTM-UAG
+116,12,portimão,12,CS-PTM-UCC
+117,12,portimão,13,CS-PTM-UCSP
+118,12,barlavento,14,CS-PTM-URAP
+119,12,atlântico sul,15,CS-PTM-USF
+120,12,portas do arade,15,CS-PTM-USF
+121,12,barlavento,16,CS-PTM-USP
+122,13,gabinete cidadão,10,CS-SBA-GC
+123,13,central,11,CS-SBA-UAG
+124,13,al-portellus,12,CS-SBA-UCC
+125,13,s. brás alportel,13,CS-SBA-UCSP
+126,13,central,16,CS-SBA-USP
+127,14,barlavento,11,CS-SLV-UAG
+128,14,rio arade,12,CS-SLV-UCC
+129,14,silves,13,CS-SLV-UCSP
+130,14,barlavento,14,CS-SLV-URAP
+131,14,barlavento,16,CS-SLV-USP
+132,15,sotavento,11,CS-TVR-UAG
+133,15,talabriga,12,CS-TVR-UCC
+134,15,mar,13,CS-TVR-UCSP
+135,15,sotavento,14,CS-TVR-URAP
+136,15,balsa,15,CS-TVR-USF
+137,15,sotavento,16,CS-TVR-USP
+138,16,barlavento,11,CS-VBP-UAG
+139,16,vicentina,12,CS-VBP-UCC
+140,16,vila do bispo,13,CS-VBP-UCSP
+141,16,barlavento,14,CS-VBP-URAP
+142,16,barlavento,16,CS-VBP-USP
+143,17,sotavento,11,CS-VRS-UAG
+144,17,sto antónio arenilha,12,CS-VRS-UCC
+145,17,vila real sto antónio,13,CS-VRS-UCSP
+146,17,sotavento,14,CS-VRS-URAP
+147,17,esteva,15,CS-VRS-USF
+148,17,levante,15,CS-VRS-USF
+149,17,sotavento,16,CS-VRS-USP

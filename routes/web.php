@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\DashController;
 use App\Http\Controllers\DeviceController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\WorkspacesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,10 +29,13 @@ Route::post('/login',   [ AuthenticatedSessionController::class, 'store'])->midd
 
 Route::get('/',         [ DashController::class , 'index'])->middleware('auth');
 Route::post('logout',   [ AuthenticatedSessionController::class , 'destroy'])->middleware('auth');
+
 Route::get('/users',    [ UsersController::class , 'index'])->middleware('auth');
 Route::get('/users/{user:mecanografico}',    [ UsersController::class , 'show'])->middleware('auth');
 
 Route::get('/devices',  [ DeviceController::class , 'index'])->middleware('auth');
 
+
+Route::get('/workspaces', [WorkspacesController::class,'index'])->middleware('auth');
 
 require __DIR__.'/auth.php';

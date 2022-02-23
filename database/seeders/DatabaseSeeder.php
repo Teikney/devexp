@@ -8,6 +8,7 @@ use App\Models\Institution;
 use App\Models\InstitutionType;
 use App\Models\Unit;
 use App\Models\TipoInstituicao;
+use App\Models\Workspace;
 use Faker\Generator;
 use Illuminate\Database\Seeder;
 
@@ -70,6 +71,7 @@ class DatabaseSeeder extends Seeder
             County::create([
                 'name' => $record['name'],
                 'zone' => $record['zone'],
+                'code' => $record['code']
             ]);
         }
 
@@ -83,28 +85,40 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-        Institution::create([
-            'institution_type_id' => InstitutionType::find(1)->id,
-            'county_id' => County::find(5)->id
-        ]);
+        // Institution::create([
+        //     'institution_type_id' => InstitutionType::find(1)->id,
+        //     'county_id' => County::find(5)->id
+        // ]);
 
+        // foreach (County::all() as $county) {
+        //     Institution::create([
+        //         'institution_type_id' => InstitutionType::find(2)->id,
+        //         'county_id' => $county->id
+        //     ]);
+        // }
 
-        foreach (County::all() as $county) {
+        $table='institutions';
+        $records = import_CSV($table);
+
+        foreach ($records as $key => $record) {
             Institution::create([
-                'institution_type_id' => InstitutionType::find(2)->id,
-                'county_id' => $county->id
+                'institution_type_id' => $record['institution_type_id'],
+                'county_id' => $record['county_id'],
             ]);
         }
 
-        // $table='institutions';
-        // $records = import_CSV($table);
+        $table='workspaces';
+        $records = import_CSV($table);
 
-        // foreach ($records as $key => $record) {
-        //     Institution::create([
-        //         'institution_type_id' => $record['institution_type_id'],
-        //         'county_id' => $record['county_id'],
-        //     ]);
-        // }
+        foreach ($records as $key => $record) {
+            Workspace::create([
+                'institution_id' => $record['institution_id'],
+                'unit_id' => $record['unit_id'],
+                'name' => $record['name'],
+                'code' => $record['code'],
+
+            ]);
+        }
 
     }
 }

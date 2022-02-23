@@ -1,17 +1,17 @@
-id,name,zone
-1,Albufeira,Central
-2,Alcoutim,Sotavento
-3,Aljezur,Barlavento
-4,Castro Marim,Sotavento
-5,Faro,Central
-6,Lagoa,Barlavento
-7,Lagos,Barlavento
-8,Loulé,Central
-9,Monchique,Barlavento
-10,Olhão,Central
-11,Portimão,Barlavento
-12,São Brás de Alportel,Central
-13,Silves,Barlavento
-14,Tavira,Sotavento
-15,Vila do Bispo,Barlavento
-16,Vila Real de Santo António,Sotavento
+id,name,zone,code
+1,Albufeira,Central,ABF
+2,Alcoutim,Sotavento,ACT
+3,Aljezur,Barlavento,AJZ
+4,Castro Marim,Sotavento,CTM
+5,Faro,Central,FAR
+6,Lagoa,Barlavento,LGA
+7,Lagos,Barlavento,LGS
+8,Loulé,Central,LLE
+9,Monchique,Barlavento,MCQ
+10,Olhão,Central,OLH
+11,Portimão,Barlavento,PTM
+12,São Brás de Alportel,Central,SBA
+13,Silves,Barlavento,SLV
+14,Tavira,Sotavento,TVR
+15,Vila do Bispo,Barlavento,VBP
+16,Vila Real de Santo António,Sotavento,VRS

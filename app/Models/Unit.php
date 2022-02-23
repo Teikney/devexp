@@ -10,9 +10,15 @@ class Unit extends Model
     use HasFactory;
 
     public $timestamps =false;
-    
+
     protected $fillable = [
         'name',
         'initials'
     ];
+
+
+    public function workspaces() {
+        return $this->hasMany(Workspaces::class);
+    }
+
 }

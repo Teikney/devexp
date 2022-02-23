@@ -18,6 +18,11 @@ class Institution extends Model
     }
 
     public function county() {
-        return $this->belongsTo(County::class);
+        return $this->belongsTo(County::class,'county_id');
     }
+
+    public function workspace() {
+        return $this->hasOne(Workspace::class);
+    }
+
 }

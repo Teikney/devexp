@@ -11,10 +11,7 @@ class InstitutionType extends Model
 
     public $timestamps = false;
 
-    protected $fillable = [
-        'name',
-        'initials'
-    ];
+    protected $guarded = [];
 
     public function institution() {
         return $this->hasOne(Institution::class);
