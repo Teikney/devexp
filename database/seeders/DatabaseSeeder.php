@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\County;
+use App\Models\DeviceItem;
+use App\Models\DeviceType;
 use App\Models\Instituicao;
 use App\Models\Institution;
 use App\Models\InstitutionType;
@@ -117,6 +119,25 @@ class DatabaseSeeder extends Seeder
                 'name' => $record['name'],
                 'code' => $record['code'],
 
+            ]);
+        }
+
+        $table='devicetypes';
+        $records = import_CSV($table);
+
+        foreach ($records as $key => $record) {
+            DeviceType::create([
+                'name' => $record['name'],
+            ]);
+        }
+
+        $table='deviceitems';
+        $records = import_CSV($table);
+
+        foreach ($records as $key => $record) {
+            DeviceItem::create([
+                'device_type_id' => $record['device_type_id'],
+                'name' => $record['name'],
             ]);
         }
 

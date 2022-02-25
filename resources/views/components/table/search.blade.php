@@ -1,5 +1,5 @@
-<form method="GET" class="relative flex inline-block">
-    <div class="relative mx-auto text-blue-600">
+<form method="GET" class="relative flex">
+    <div class="relative pl-4 mx-auto text-blue-600">
         <input class="border-2 border-blue-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
             type="search" name="search" placeholder="Search">
         <button type="submit" class="absolute right-0 top-0 mt-2 mr-3">

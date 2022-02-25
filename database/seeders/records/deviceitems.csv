@@ -1,0 +1,10 @@
+id,device_type_id,name
+1,1,laptop
+2,1,desktop
+3,2,display
+4,2,keyboard
+5,2,mouse
+6,2,webcam
+7,2,microphone
+8,2,audio
+9,3,printer

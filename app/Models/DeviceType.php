@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Device extends Model
+class DeviceType extends Model
 {
     use HasFactory;
 
@@ -13,8 +13,8 @@ class Device extends Model
 
     protected $guarded = [];
 
-    public function item() {
-        return $this->belongsTo(DeviceItem::class,'device_item_id');
+    public function item()
+    {
+        return $this->hasOne(DeviceItem::class);
     }
-
 }

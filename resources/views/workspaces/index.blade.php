@@ -8,14 +8,13 @@
         </x-title>
         <div class="-my-2 overflow-x-auto">
             <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-                <div class="flex inline-block items-center m-2">
+                <div class="flex items-center my-4">
                     <x-table.search/>
-                    <div class="m-2 ml-6 mr-2 w-full">
+                    <div class="ml-6 mr-2 w-full">
                         {{ $workspaces->links() }}
                     </div>
                 </div>
-                <div class="shadow border border-blue-300 sm:rounded-lg bg-blue-100">
-                    {{-- @dd($workspaces) --}}
+                <div class="shadow border border-blue-200 sm:rounded-lg bg-blue-100">
                     <table class="min-w-full divide-y divide-gray-200">
                         <thead>
                             <tr>
