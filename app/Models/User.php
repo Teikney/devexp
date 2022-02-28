@@ -24,6 +24,7 @@ class User extends Authenticatable
         'active',
         'name',
         'email',
+        'workspace',
         'password',
     ];
 

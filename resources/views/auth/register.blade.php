@@ -7,19 +7,28 @@
         </x-slot>
 
         <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+        {{-- <x-auth-validation-errors class="mb-4" :errors="$errors" /> --}}
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
+            <!-- Workspace -->
+            <div class="mt-4" x-data="{ open: false}" @click.away="open = false">
+                <x-label id="listbox-label" for="workspace" :value="__('Local de Trabalho')"/>
+
+                <x-workspace-dropdown id="workspace"/>
+            </div>
+
+
+
             <!-- Name -->
-            <div>
+            <div class="mt-4">
                 <x-label for="name" :value="__('Name')" />
 
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
-            <div>
+            <div class="mt-4">
                 <x-label for="mecanografico" :value="__('Mecanografico')" />
 
                 <x-input id="mecanografico" class="block mt-1 w-full" type="number" name="mecanografico" :value="old('mecanografico')" required autofocus />
@@ -33,8 +42,13 @@
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
 
+            {{-- <x-dropdown/> --}}
 
-            <x-password-input/>
+
+
+
+
+            {{-- <x-password-input/> --}}
 
 
             <!-- Password -->

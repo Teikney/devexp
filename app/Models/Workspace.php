@@ -38,4 +38,9 @@ class Workspace extends Model
     public function institution() {
         return $this->belongsTo(Institution::class);
     }
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
 }

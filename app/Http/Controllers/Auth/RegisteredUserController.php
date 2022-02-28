@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Workspace;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
@@ -33,11 +34,12 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-    
+
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'mecanografico' => ['required','digits_between:5,6'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'workspace' => ['required','exists:workspaces,code'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -46,6 +48,7 @@ class RegisteredUserController extends Controller
             'active' => true,
             'mecanografico' => $request->mecanografico,
             'email' => $request->email,
+            'workspace' => Workspace::where('code','=', $request->workspace),
             'password' => Hash::make($request->password),
         ]);
 

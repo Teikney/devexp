@@ -1,15 +1,14 @@
-<div class="py-2" x-data="{ show: true }" @click.away="show = true">
+<div class="mt-4" x-data="{ show: true }" @click.away="show = true">
     <x-label for="password" :value="__('Password')" />
     <div class="relative">
         <input placeholder=""
             name="password"
             :type="show ? 'password' : 'text'"
-            class="text-md block px-3 py-2 rounded-lg w-full
-            bg-white border-2 border-gray-300 placeholder-gray-600 shadow-md
-            focus:placeholder-gray-500
-            focus:bg-white
-            focus:border-gray-600
-            focus:outline-none"/>
+            class="block mt-1 w-full rounded-md shadow-sm border-gray-300
+            focus:border-indigo-300
+            focus:ring
+            focus:ring-indigo-200
+            focus:ring-opacity-50"/>
         <div class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
             <svg class="h-6 text-gray-700" fill="none" @click="show = !show"
                 :class="{'hidden': !show, 'block':show }" xmlns="http://www.w3.org/2000/svg"
