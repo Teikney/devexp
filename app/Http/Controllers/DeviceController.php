@@ -10,7 +10,7 @@ class DeviceController extends Controller
     public function index()
     {
         return view('devices.index', [
-            'devices' => Device::latest()->paginate(10)->withQueryString()
+            'devices' => Device::paginate(10)->withQueryString()
         ]);
     }
 }
