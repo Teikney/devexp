@@ -32,11 +32,11 @@ class Workspace extends Model
     }
 
     public function unit() {
-        return $this->belongsTo(Unit::class);
+        return $this->belongsTo(Unit::class,'unit_id','id');
     }
 
     public function institution() {
-        return $this->belongsTo(Institution::class);
+        return $this->belongsTo(Institution::class,'institution_id','id');
     }
 
     public function users()

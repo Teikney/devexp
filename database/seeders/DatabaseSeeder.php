@@ -104,8 +104,8 @@ class DatabaseSeeder extends Seeder
 
         foreach ($records as $key => $record) {
             Institution::create([
-                'institution_type_id' => $record['institution_type_id'],
-                'county_id' => $record['county_id'],
+                'institution_type_id' => InstitutionType::findOrfail($record['institution_type_id'])->id/* $record['institution_type_id'] */,
+                'county_id' => County::findOrFail($record['county_id'])->id/* $record['county_id'] */,
             ]);
         }
 
@@ -114,8 +114,8 @@ class DatabaseSeeder extends Seeder
 
         foreach ($records as $key => $record) {
             Workspace::create([
-                'institution_id' => $record['institution_id'],
-                'unit_id' => $record['unit_id'],
+                'institution_id' => Institution::findOrFail($record['institution_id'])->id,
+                'unit_id' => Unit::findOrFail($record['unit_id'])->id ,
                 'name' => $record['name'],
                 'code' => $record['code'],
 
@@ -136,7 +136,7 @@ class DatabaseSeeder extends Seeder
 
         foreach ($records as $key => $record) {
             DeviceItem::create([
-                'device_type_id' => $record['device_type_id'],
+                'device_type_id' => DeviceType::findOrFail($record['device_type_id'])->id,
                 'name' => $record['name'],
             ]);
         }

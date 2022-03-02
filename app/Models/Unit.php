@@ -17,8 +17,8 @@ class Unit extends Model
     ];
 
 
-    public function workspaces() {
-        return $this->hasMany(Workspaces::class);
+    public function workspace() {
+        return $this->hasOne(Workspaces::class);
     }
 
 }

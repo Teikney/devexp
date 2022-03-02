@@ -46,7 +46,7 @@ id,institution_id,name,unit_id,code
 45,1,Serviço de Viaturas,9,ARS-UCL-SV
 46,1,Serviços Farmacêuticos,9,ARS-UCL-SF
 47,1,Serviço de Gestão de Transporte e Doentes,9,ARS-UCL-SGTD
-48,1,Geral,30,ARS-GRL
+48,1,Geral,17,ARS-GRL
 49,2,gabinete cidadão,10,CS-ABF-GC
 50,2,central,11,CS-ABF-UAG
 51,2,al-buhera,12,CS-ABF-UCC

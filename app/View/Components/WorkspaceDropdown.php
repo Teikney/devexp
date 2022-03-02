@@ -3,20 +3,11 @@
 namespace App\View\Components;
 
 use App\Models\Workspace;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\View\Component;
 
 class WorkspaceDropdown extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
-    }
-
     /**
      * Get the view / contents that represent the component.
      *
@@ -24,9 +15,14 @@ class WorkspaceDropdown extends Component
      */
     public function render()
     {
-        return view('components.workspace-dropdown', [
-            'workspaces' => Workspace::all(),
-            'currentWorkspace' => Workspace::firstWhere('code',request('workspace'))
-        ]);
+
+        $workspaces = Workspace::all();
+        // dd($workspaces);
+        // $workspaces = Collection::make(Workspace::all());
+        // ddd(Workspace::all()->take(30));
+        return view('components.workspace-dropdown' , [
+            'workspaces' => $workspaces,
+            // 'currentWorkspace' => Workspace::firstWhere('code',request('workspace'))
+        ] );
     }
 }

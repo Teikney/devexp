@@ -25,7 +25,7 @@
                 </div>
                 <div class="bg-blue-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-sm font-bold text-blue-500">Local de Trabalho Principal</dt>
-                    <dd class="mt-1 text-sm text-blue-900 sm:mt-0 sm:col-span-2">NSIC DGAG <strong>[HARD CODED]</strong></dd>
+                    <dd class="mt-1 text-sm text-blue-900 sm:mt-0 sm:col-span-2">{{ $user->workspace->unit->name }}<br>{{ $user->workspace->name }}</dd>
                 </div>
                 <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-sm font-bold text-blue-500">About</dt>

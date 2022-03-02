@@ -34,12 +34,11 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'mecanografico' => ['required','digits_between:5,6'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'workspace' => ['required','exists:workspaces,code'],
+            'workspace' => ['required','exists:workspaces,id'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -48,7 +47,7 @@ class RegisteredUserController extends Controller
             'active' => true,
             'mecanografico' => $request->mecanografico,
             'email' => $request->email,
-            'workspace' => Workspace::where('code','=', $request->workspace),
+            'workspace_id' => Workspace::findOrFail($request->workspace)->id,
             'password' => Hash::make($request->password),
         ]);
 
